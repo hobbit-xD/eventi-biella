@@ -3,7 +3,7 @@ languageCode = "it-IT"
 defaultContentLanguage = "it"
 title = "Eventi Biella"
 theme = "eventi"
-
+googleAnalytics = "UA-146395434-1"
 
 [permalinks]
   posts = "/:filename/"
@@ -24,4 +24,4 @@ theme = "eventi"
   author = "Admin"
   dateFormat = "Jan 2, 2006"
 
-googleAnalytics = "UA-146395434-1"
+
