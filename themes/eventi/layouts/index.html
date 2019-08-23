@@ -42,7 +42,8 @@
       <div class="entries">
         {{ range .Pages }}
         {{ $image_arr := .Params.images }}
-
+        {{ $data := (split .Params.data "-")}}
+        
         <div class="{{ $.Scratch.Get "str" }}">
           <div class="item-entry">
             <div class="item-entry__thumb">
@@ -64,8 +65,8 @@
               </h1>
 
               <div class="item-entry__date">
-                <a href="{{ .RelPermalink }}">{{ .Date.Day }} {{ index $.Site.Data.mesi (printf "%d" .Date.Month) }}
-                  {{ .Date.Year }} </a>
+                <a href="{{ .RelPermalink }}">{{ index $data 2 }} {{ index $.Site.Data.mesi (printf "%d" (int (index $data 1)))  }}
+                  {{ index $data 0 }} </a>
               </div>
             </div>
           </div>

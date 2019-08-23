@@ -1,6 +1,7 @@
 ---
 title: "Bolle di Malto"
 date: 2019-08-20T14:47:00+02:00
+data: 2019-8-28
 tags: [evento,birra,concerti]
 draft: false
 category: "eventi"
