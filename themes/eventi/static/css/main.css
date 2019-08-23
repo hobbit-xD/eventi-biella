@@ -3373,6 +3373,17 @@ hr {
 .sidebar {
   margin-top: 80%;
 }
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    margin-top: 0;
+  }
+}
 
 .info_border {
   width: auto;
