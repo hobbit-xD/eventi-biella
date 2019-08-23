@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+{{ $image_arr := .Params.post_images }}
+
+<section class="s-content">
+    <div class="container">
+
+        <article class="row entry format-standard">
+
+            <div class="entry__media col-12">
+                <div class="entry__post-thumb">
+                    <img src="{{ index $image_arr 1  | relURL  }}" srcset="
+                    {{ index $image_arr 2  | relURL  }} 2000w, 
+                    {{ index $image_arr 1  | relURL  }} 1000w, 
+                    {{ index $image_arr 0  | relURL  }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                </div>
+            </div>
+
+            <div class="entry__header col-12">
+                <h1 class="entry__header-title display-1">
+                    {{ .Title }}
+                </h1>
+            </div>
+        </article>
+
+
+        <hr />
+        <section id="descrizione">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="sidebar">
+                        <div class="info_border info_border_top">
+                            <p class="info_entry">organizzato da</p>
+                            <p class="info_entry_title"> {{ .Params.organizzatori }}
+                            </p>
+
+                        </div>
+                        <div class="info_border info_border_top">
+                            <p class="info_entry">INIZIo</p>
+                            <p class="info_entry_title">{{ .Params.data_inizio }}</p>
+                            <p class="info_entry_sub">alle {{ .Params.ora_inizio }}</p>
+                        </div>
+
+
+                        <div class="info_border">
+                            <p class="info_entry">fine</p>
+                            <p class="info_entry_title">{{ .Params.data_fine }}</p>
+                            <p class="info_entry_sub">alle {{ .Params.ora_fine }}</p>
+                        </div>
+
+                        <div class="info_border info_border_top">
+                            <p class="info_entry">contatti</p>
+                            {{ if ne .Params.sito_web "" }}<a href="{{ .Params.sito_web }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                                <p class="info_entry_sub"><u>Sito Web</u></p>
+                            </a>{{end}}
+                            {{ if ne .Params.facebook "" }} <a href="{{ .Params.facebook }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                                <p class="info_entry_sub"><u>Facebook</u></p>
+                            </a>{{end}}
+                            {{ if ne .Params.instagram "" }} <a href="{{ .Params.instagram }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                                <p class="info_entry_sub">Instagram</p>
+                            </a>{{end}}
+                            {{ if ne .Params.email "" }} <p class="info_entry_sub">Email: {{ .Params.email }}</p>{{end}}
+                            {{ if ne .Params.email "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>{{end}}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-9">
+
+                    {{ .Content }}
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+    </div>
+</section>
+
+{{ end }}

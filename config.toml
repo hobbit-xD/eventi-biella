@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "it-IT"
+defaultContentLanguage = "it"
+title = "Eventi Biella"
+theme = "eventi"
+
+
+[permalinks]
+  posts = "/:filename/"
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Contatti"
+    url = "/contact/"
+    weight = 2
+
+[params]
+  author = "Admin"
+  dateFormat = "Jan 2, 2006"

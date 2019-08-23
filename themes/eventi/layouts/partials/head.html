@@ -1,0 +1,36 @@
+<head>
+    <!--- basic page needs
+      ================================================== -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- mobile specific metas
+      ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    {{ hugo.Generator }}
+
+    <!-- Bootstrap core CSS -->
+    {{ $cssBootstrap := "vendor/bootstrap/css/bootstrap.min.css" | absURL }}
+    <link rel="stylesheet" href="{{ $cssBootstrap }}">
+
+    <!-- CSS
+      ================================================== -->
+
+    {{ $css0 := "css/normalize.css" | absURL }}
+    <link rel="stylesheet" href="{{ $css0 }}">
+
+
+    {{ $css1 := "css/main.css" | absURL }}
+    <link rel="stylesheet" href="{{ $css1 }}">
+
+
+    {{ $css2 := "css/toggle.css" | absURL }}
+    <link rel="stylesheet" href="{{ $css2 }}">
+
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+    <title>{{ $title }}</title>
+
+</head>
