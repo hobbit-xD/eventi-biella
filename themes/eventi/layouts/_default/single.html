@@ -48,6 +48,11 @@
                             <p class="info_entry_sub">alle {{ .Params.ora_fine }}</p>
                         </div>
 
+                        <div class="info_border">
+                            <p class="info_entry">Dove</p>
+                            <p class="info_entry_title">{{ .Params.luogo }}</p>
+                        </div>
+
                         <div class="info_border info_border_top">
                             <p class="info_entry">contatti</p>
                             {{ if ne .Params.sito_web "" }}<a href="{{ .Params.sito_web }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
@@ -57,7 +62,7 @@
                                 <p class="info_entry_sub"><u>Facebook</u></p>
                             </a>{{end}}
                             {{ if ne .Params.instagram "" }} <a href="{{ .Params.instagram }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
-                                <p class="info_entry_sub">Instagram</p>
+                                <p class="info_entry_sub"><u>Instagram</u></p>
                             </a>{{end}}
                             {{ if ne .Params.email "" }} <p class="info_entry_sub">Email: {{ .Params.email }}</p>{{end}}
                             {{ if ne .Params.email "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>{{end}}

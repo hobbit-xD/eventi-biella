@@ -24,6 +24,8 @@ ora_inizio: "18:00"
 data_fine: "2 settembre 2018"
 ora_fine: "24:00"
 
+luogo: "Piazza Martiri della Libertà - 13900 Biella (BI)"
+
 sito_web: "http://www.bolledimalto.it/index.php?lang=it"
 facebook: "https://www.facebook.com/BollediMalto/"
 instagram: ""

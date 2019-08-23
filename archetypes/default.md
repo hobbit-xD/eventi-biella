@@ -17,5 +17,13 @@ data_inizio: ""
 ora_inizio: ""
 data_fine: ""
 ora_fine: ""
+
+sito_web: ""
+facebook: ""
+instagram: ""
+telefono: ""
+email: ""
+
+mese: "Agosto"
 ---
 
