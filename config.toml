@@ -23,3 +23,5 @@ theme = "eventi"
 [params]
   author = "Admin"
   dateFormat = "Jan 2, 2006"
+
+googleAnalytics = "UA-146395434-1"
