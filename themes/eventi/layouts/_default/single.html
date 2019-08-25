@@ -9,10 +9,7 @@
 
             <div class="entry__media col-12">
                 <div class="entry__post-thumb">
-                    <img src="{{ index $image_arr 1  | relURL  }}" srcset="
-                    {{ index $image_arr 2  | relURL  }} 2000w, 
-                    {{ index $image_arr 1  | relURL  }} 1000w, 
-                    {{ index $image_arr 0  | relURL  }} 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                    <img src="{{ .Params.post_images | relURL  }}" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
                 </div>
             </div>
 
@@ -25,7 +22,7 @@
 
 
         <hr />
-        <section id="descrizione">
+        <section>
             <div class="row">
                 <div class="col-md-3 ">
                     <div class="sidebar">
@@ -64,15 +61,15 @@
                             {{ if ne .Params.instagram "" }} <a href="{{ .Params.instagram }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
                                 <p class="info_entry_sub"><u>Instagram</u></p>
                             </a>{{end}}
-                            {{ if ne .Params.email "" }} <p class="info_entry_sub">Email: {{ .Params.email }}</p>{{end}}
-                            {{ if ne .Params.email "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>{{end}}
+                            {{ if ne .Params.email "" }} <p class="info_entry_sub"><u>Email:</u> {{ .Params.email }}</p>{{end}}
+                            {{ if ne .Params.telefono "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>{{end}}
                         </div>
                         <div class="info_border"></div>
                     </div>
 
                 </div>
 
-                <div class="col-md-9">
+                <div  id="descrizione" class="col-md-9">
 
                     {{ .Content }}
 

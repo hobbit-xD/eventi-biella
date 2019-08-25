@@ -2,8 +2,8 @@
     <!--- basic page needs
       ================================================== -->
     <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="eventi" />
+    <meta name="author" content="admioni" />
 
     <!-- mobile specific metas
       ================================================== -->
@@ -30,8 +30,7 @@
 
     <!-- INternal template -->
     {{ template "_internal/google_analytics.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+
 
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
