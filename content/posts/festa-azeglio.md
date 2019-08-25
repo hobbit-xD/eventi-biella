@@ -11,10 +11,7 @@ images:
 - /img/thumb/festa-azeglio-400.jpg
 - /img/thumb/festa-azeglio-800.jpg
 
-post_images: 
-- /img/post/festa-azeglio-top.jpg
-- /img/post/festa-azeglio-top.jpg
-- /img/post/festa-azeglio-top.jpg
+post_images: "/img/post/festa-azeglio-top.jpg"
 
 
 organizzatori: "Pro Loco Azeglio"

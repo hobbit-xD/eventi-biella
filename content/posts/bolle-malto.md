@@ -11,10 +11,7 @@ images:
 - /img/thumb/bolle-malto-400.jpg
 - /img/thumb/bolle-malto-800.jpg
 
-post_images: 
-- /img/post/bolle-malto.jpg
-- /img/post/bolle-malto.jpg
-- /img/post/bolle-malto.jpg
+post_images: "/img/post/bolle-malto.jpg"
 
 
 
