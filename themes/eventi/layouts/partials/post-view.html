@@ -5,8 +5,7 @@
 
         {{ $dateTime := .PublishDate.Format "2006-01-02" }}
         {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-        {{ $image_arr := .Params.images }}
-
+        
         <!-- RICRODARSI DI FARE UN IF PER CONTROLLARE CHE '$image_arr' NON SIA VUOTO SENNO 
                     SI CRASHA TUTTO, SE VUOTO METTERE CUSTOM IMAGE CON 'image not found' -->
 
@@ -14,10 +13,7 @@
             <div class="item-entry">
                 <div class="item-entry__thumb">
                     <a href="{{ .RelPermalink }}" class="item-entry__thumb-link">
-                        <img src="{{ index $image_arr 0  | relURL  }}" srcset="
-                {{ index $image_arr 0  | relURL  }} 1x,
-                {{ index $image_arr 1  | relURL  }} 2x
-      " alt="" />
+                        <img src="{{ .Params.images | relURL  }}"alt="" />
                     </a>
                 </div>
 

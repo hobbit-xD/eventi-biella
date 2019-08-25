@@ -7,9 +7,7 @@ draft: false
 category: "eventi"
 author: "admin"
 
-images: 
-- /img/thumb/bolle-malto-400.jpg
-- /img/thumb/bolle-malto-800.jpg
+images: ["/img/thumb/bolle-malto-400.jpg"]
 
 post_images: "/img/post/bolle-malto.jpg"
 

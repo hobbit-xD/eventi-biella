@@ -7,9 +7,7 @@ draft: false
 category: "eventi"
 author: "admin"
 
-images:
-- /img/thumb/festa-azeglio-400.jpg
-- /img/thumb/festa-azeglio-800.jpg
+images: ["/img/thumb/festa-azeglio-400.jpg"]
 
 post_images: "/img/post/festa-azeglio-top.jpg"
 

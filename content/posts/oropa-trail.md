@@ -7,9 +7,7 @@ draft: false
 category: "Sport"
 author: ""
 
-images:
-- /img/thumb/oropa-trail-400.jpg
-- /img/thumb/oropa-trail-800.jpg
+images: ["/img/thumb/oropa-trail-400.jpg"]
 
 
 post_images: "/img/post/oropa-trail-head.jpg"
