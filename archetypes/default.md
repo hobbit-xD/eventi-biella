@@ -1,16 +1,17 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+data: 
 tags: []
 draft: false
 category: ""
 author: ""
 
-images: nil
+images: ["/img/thumb/"]
 
-post_images: nil
+post_images: "/img/post/"
 
-
+luogo:
 
 organizzatori: ""
 data_inizio: ""
@@ -24,6 +25,6 @@ instagram: ""
 telefono: ""
 email: ""
 
-mese: "Agosto"
+mese: ""
 ---
 
