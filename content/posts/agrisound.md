@@ -3,6 +3,7 @@ title: "AgriSound 2019"
 date: 2019-08-26T18:09:59+02:00
 data: 2019-9-06
 tags: [musica,djset,stand gastronomici,pollo,party]
+description: "Festa di paese della durata di tre giorni che si svolge alla Spolina. Musica e specialità alla griglia fanno da padrone."
 draft: false
 category: "eventi"
 author: "admin"

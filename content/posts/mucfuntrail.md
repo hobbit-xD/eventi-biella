@@ -3,6 +3,9 @@ title: "Muc Fun Trail V"
 date: 2019-08-26T18:42:05+02:00
 data: 2019-9-29
 tags: [corsa,trail,birra,menabrea,sensa cunisiun]
+description: "13 km di percorso, dislivello (900+ 250-)
+4 pit stop non obbligatori che garantiranno uno sconto di 10 minuti sul tempo finale per ogni birra consumata (al massimo 1 birra a ristoro)
+al termine della gara pranzo e festa in quota!"
 draft: false
 category: "sport"
 author: "admin"

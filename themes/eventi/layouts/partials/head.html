@@ -1,13 +1,11 @@
 <head>
     <!--- basic page needs
       ================================================== -->
-    <meta charset="utf-8" />
-    <meta name="description" content="eventi" />
-    <meta name="author" content="admioni" />
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-    <!-- mobile specific metas
-      ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      
     {{ hugo.Generator }}
 
     <!-- Bootstrap core CSS -->
@@ -29,9 +27,9 @@
     <link rel="stylesheet" href="{{ $css2 }}">
 
     <!-- INternal template -->
-    {{ template "_internal/google_analytics.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+    {{ partial "site-meta.html" . }}
+    {{ partial "site-opengraph.html" . }}
+    {{ partial "site-twittercard.html" . }}
     
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
