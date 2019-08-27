@@ -1,0 +1,2 @@
+var input=document.getElementById('cFile');var infoArea=document.getElementById('file-upload-filename');input.addEventListener('change',showFileName);function showFileName(event){var input=event.srcElement;var tmp='';if('files'in input){for(var i=0;i<input.files.length;i++){var fileName=input.files[i].name;tmp+=fileName+' <i class="far fa-check-circle"></i><br>';}}
+infoArea.innerHTML=tmp;}

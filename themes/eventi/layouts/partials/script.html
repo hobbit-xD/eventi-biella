@@ -6,14 +6,14 @@
   {{ $js1 := "vendor/bootstrap/js/bootstrap.bundle.min.js" | absURL }}
   <script src="{{ $js1 }}"></script>
 
-  {{ $js2 := "js/plugins.js" | absURL }}
-  <script src="{{ $js2 }}"></script>
+  {{ $js2 := resources.Get "js/plugins.js" | minify }}
+  <script src="{{ $js2.Permalink }}"></script>
 
-  {{ $js3 := "js/main.js" | absURL }}
-  <script src="{{ $js3 }}"></script>
+  {{ $js3 := resources.Get "js/main.js" | minify }}
+  <script src="{{ $js3.Permalink }}"></script>
 
-  {{ $js4 := "js/toggle.js" | absURL }}
-  <script src="{{ $js4 }}"></script>
+  {{ $js4 := resources.Get "js/toggle.js" | minify }}
+  <script src="{{ $js4.Permalink }}"></script>
 
-  {{ $js5 := "js/filePrint.js" | absURL }}
-  <script src="{{ $js5 }}"></script>
+  {{ $js5 := resources.Get "js/filePrint.js" | minify }}
+  <script src="{{ $js5.Permalink }}"></script>

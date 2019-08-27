@@ -1,39 +1,39 @@
 <head>
-    <!--- basic page needs
+  <!--- basic page needs
       ================================================== -->
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-      
-    {{ hugo.Generator }}
 
-    <!-- Bootstrap core CSS -->
-    {{ $cssBootstrap := "vendor/bootstrap/css/bootstrap.min.css" | absURL }}
-    <link rel="stylesheet" href="{{ $cssBootstrap }}">
+  {{ hugo.Generator }}
 
-    <!-- CSS
+  <!-- Bootstrap core CSS -->
+  {{ $cssBootstrap := "vendor/bootstrap/css/bootstrap.min.css" | absURL }}
+  <link rel="stylesheet" href="{{ $cssBootstrap }}">
+
+  <!-- CSS
       ================================================== -->
 
-    {{ $css0 := "css/normalize.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css0 }}">
+  {{ $css0 := resources.Get "css/normalize.css" | toCSS | minify | fingerprint  }}
+  <link rel=" stylesheet" href="{{ $css0.Permalink }}" integrity="{{ $css0.Data.Integrity }}" media="screen">
 
 
-    {{ $css1 := "css/main.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css1 }}">
+  {{ $css1 := resources.Get "css/main.css" | toCSS | minify | fingerprint  }}
+  <link rel="stylesheet" href="{{ $css1.Permalink }}" integrity="{{ $css1.Data.Integrity }}" media="screen">
 
 
-    {{ $css2 := "css/toggle.css" | absURL }}
-    <link rel="stylesheet" href="{{ $css2 }}">
+  {{ $css2 := resources.Get "css/toggle.css" | toCSS | minify | fingerprint  }}
+  <link rel="stylesheet" href="{{ $css2.Permalink }}" integrity="{{ $css2.Data.Integrity }}" media="screen">
 
-    <!-- INternal template -->
-    {{ partial "site-meta.html" . }}
-    {{ partial "site-opengraph.html" . }}
-    {{ partial "site-twittercard.html" . }}
-    
-    {{ $title := print .Title " | " .Site.Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <!-- INternal template -->
+  {{ partial "site-meta.html" . }}
+  {{ partial "site-opengraph.html" . }}
+  {{ partial "site-twittercard.html" . }}
 
-    <title>{{ $title }}</title>
+  {{ $title := print .Title " | " .Site.Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+  <title>{{ $title }}</title>
 
 </head>
