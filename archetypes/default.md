@@ -3,6 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 data: 
 tags: []
+description: 
 draft: false
 category: ""
 author: ""
