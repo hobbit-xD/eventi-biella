@@ -30,6 +30,7 @@
   {{ partial "site-meta.html" . }}
   {{ partial "site-opengraph.html" . }}
   {{ partial "site-twittercard.html" . }}
+  {{ partial "site-schema.html" . }}
 
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
