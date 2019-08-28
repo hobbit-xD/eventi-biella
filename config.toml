@@ -23,7 +23,7 @@ googleAnalytics = "UA-146395434-1"
 [params]
   author = "Admin"
   dateFormat = "Jan 2, 2006"
-  description = "Eventi Biella è un sito dall'interfaccia semplice e intuitiva nato con lo scopo di racchiudere in un unico luogo tutti gli eventi presenti nel biellese e con la possibilità di poter promuovere un proprio evento."
-  image = "/img/biglogo.png"
+  description = "Eventi Biella è un sito dall'interfaccia semplice e intuitiva nato con lo scopo di racchiudere in un unico luogo tutti gli eventi presenti nel biellese."
+  logo = "img/biglogo.png"
 
 
