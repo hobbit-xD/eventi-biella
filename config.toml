@@ -5,6 +5,7 @@ title = "Eventi Biella"
 theme = "eventi"
 googleAnalytics = "UA-146395434-1"
 enableRobotsTXT = true
+canonifyURLs = true
 
 [permalinks]
   posts = "/:filename/"
