@@ -27,4 +27,8 @@ enableRobotsTXT = true
   description = "Eventi Biella è un sito dall'interfaccia semplice e intuitiva nato con lo scopo di racchiudere in un unico luogo tutti gli eventi presenti nel biellese."
   logo = "img/biglogo.png"
 
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
 
