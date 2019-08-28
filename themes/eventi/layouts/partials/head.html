@@ -16,15 +16,15 @@
       ================================================== -->
 
   {{ $css0 := resources.Get "css/normalize.css" | toCSS | minify | fingerprint  }}
-  <link rel=" stylesheet" href="{{ $css0.Permalink }}" integrity="{{ $css0.Data.Integrity }}" media="screen">
+  <link rel=" stylesheet" href="{{ $css0.Permalink }}"  media="screen">
 
 
   {{ $css1 := resources.Get "css/main.css" | toCSS | minify | fingerprint  }}
-  <link rel="stylesheet" href="{{ $css1.Permalink }}" integrity="{{ $css1.Data.Integrity }}" media="screen">
+  <link rel="stylesheet" href="{{ $css1.Permalink }}"  media="screen">
 
 
   {{ $css2 := resources.Get "css/toggle.css" | toCSS | minify | fingerprint  }}
-  <link rel="stylesheet" href="{{ $css2.Permalink }}" integrity="{{ $css2.Data.Integrity }}" media="screen">
+  <link rel="stylesheet" href="{{ $css2.Permalink }}"  media="screen">
 
   <!-- INternal template -->
   {{ partial "site-meta.html" . }}
