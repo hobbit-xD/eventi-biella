@@ -28,6 +28,17 @@ canonifyURLs = true
   description = "Eventi Biella è un sito dall'interfaccia semplice e intuitiva nato con lo scopo di racchiudere in un unico luogo tutti gli eventi presenti nel biellese."
   logo = "img/biglogo.png"
   googleAnalytics = "UA-146395434-1"
+  # Sets specific share to appear on posts (default behavior is to appear)
+  socialShareTwitter = true
+  socialShareGoogleplus = false
+  socialShareFacebook = true
+  socialShareReddit = true
+  socialShareLinkedin = true
+  socialShareStumbleupon = false
+  socialSharePinterest = false
+  socialShareEmail = true
+  socialShareTelegram = true
+  socialShareWhats = true
 
 [sitemap]
   changefreq = "weekly"

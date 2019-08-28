@@ -50,27 +50,33 @@
 
                         <div class="info_border info_border_top">
                             <p class="info_entry">contatti</p>
-                            {{ if ne .Params.sito_web "" }}<a href="{{ .Params.sito_web }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                            {{ if ne .Params.sito_web "" }}<a href="{{ .Params.sito_web }}" target="_blank"
+                                style="color:rgba(0, 0, 0, 0.8)">
                                 <p class="info_entry_sub"><u>Sito Web</u></p>
                             </a>{{end}}
-                            {{ if ne .Params.facebook "" }} <a href="{{ .Params.facebook }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                            {{ if ne .Params.facebook "" }} <a href="{{ .Params.facebook }}" target="_blank"
+                                style="color:rgba(0, 0, 0, 0.8)">
                                 <p class="info_entry_sub"><u>Facebook</u></p>
                             </a>{{end}}
-                            {{ if ne .Params.instagram "" }} <a href="{{ .Params.instagram }}" target="_blank" style="color:rgba(0, 0, 0, 0.8)">
+                            {{ if ne .Params.instagram "" }} <a href="{{ .Params.instagram }}" target="_blank"
+                                style="color:rgba(0, 0, 0, 0.8)">
                                 <p class="info_entry_sub"><u>Instagram</u></p>
                             </a>{{end}}
-                            {{ if ne .Params.email "" }} <p class="info_entry_sub"><u>Email:</u> {{ .Params.email }}</p>{{end}}
-                            {{ if ne .Params.telefono "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>{{end}}
+                            {{ if ne .Params.email "" }} <p class="info_entry_sub"><u>Email:</u> {{ .Params.email }}</p>
+                            {{end}}
+                            {{ if ne .Params.telefono "" }} <p class="info_entry_sub">Tel: {{ .Params.telefono }}</p>
+                            {{end}}
                         </div>
                         <div class="info_border"></div>
                     </div>
 
                 </div>
 
-                <div  id="descrizione" class="col-md-9">
-
+                <div id="descrizione" class="col-md-9">
                     {{ .Content }}
-
+<hr>
+                    <h3 class="mt-2">Condividi su: </h3>
+                    {{ partial "share-icons.html" . }}
                 </div>
 
             </div>
