@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://eventi-biella.netlify.com/"
 languageCode = "it-IT"
 defaultContentLanguage = "it"
 title = "Eventi Biella"
