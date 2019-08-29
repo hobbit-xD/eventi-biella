@@ -1,16 +1,6 @@
 <!-- Social Share Button HTML -->
 <div class="social-buttons">
-    <!-- Twitter -->
-    {{ if .Site.Params.socialShareTwitter | default true}}
 
-    <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}"
-        target="_blank" class="social-buttons__button social-button social-button--twitter" aria-label="Twitter">
-        <span class="social-button__inner">
-            <i class="fab fa-twitter"></i>
-        </span>
-    </a>
-
-    {{ end }}
 
     <!-- Google Plus -->
     {{ if .Site.Params.socialShareGoogleplus | default true}}
@@ -31,6 +21,18 @@
         class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
         <span class="social-button__inner">
             <i class="fab fa-facebook"></i>
+        </span>
+    </a>
+
+    {{ end }}
+
+    <!-- Twitter -->
+    {{ if .Site.Params.socialShareTwitter | default true}}
+
+    <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Social.twitter }}"
+        target="_blank" class="social-buttons__button social-button social-button--twitter" aria-label="Twitter">
+        <span class="social-button__inner">
+            <i class="fab fa-twitter"></i>
         </span>
     </a>
 
@@ -86,17 +88,6 @@
 
     {{ end }}
 
-    <!-- Email -->
-    {{ if .Site.Params.socialShareEmail | default true}}
-
-    <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_blank"
-        class="social-buttons__button social-button social-button--mail" aria-label="Email">
-        <span class="social-button__inner">
-            <i class="far fa-envelope"></i>
-        </span>
-    </a>
-    {{ end }}
-
     <!-- Telegram -->
     {{ if .Site.Params.socialShareTelegram | default true}}
 
@@ -115,6 +106,17 @@
         class="social-buttons__button social-button social-button--whats" aria-label="WhatsApp">
         <span class="social-button__inner">
             <i class="fab fa-whatsapp"></i>
+        </span>
+    </a>
+    {{ end }}
+
+    <!-- Email -->
+    {{ if .Site.Params.socialShareEmail | default true}}
+
+    <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_blank"
+        class="social-buttons__button social-button social-button--mail" aria-label="Email">
+        <span class="social-button__inner">
+            <i class="far fa-envelope"></i>
         </span>
     </a>
     {{ end }}
