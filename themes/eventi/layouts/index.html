@@ -40,7 +40,7 @@
 
     <div class="row">
       <div class="entries">
-        {{ range .Pages }}
+        {{ range (.Pages.ByParam "data").Reverse }}
         {{ $data := (split .Params.data "-")}}
         
         <div class="{{ $.Scratch.Get "str" }}">
