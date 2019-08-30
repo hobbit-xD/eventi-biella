@@ -25,7 +25,7 @@
           "url": "{{ .Permalink }}",
           "datePublished": "{{ time .Date }}",
           "description": "{{ .Description }}",
-          "image": "{{ .Site.Params.logo | relURL }}",
+          "image": "{{ index .Params.images 0 | absURL }}",
           "publisher":  {
             "@type": "Person",
             "name": "{{ .Site.Params.author }}"
