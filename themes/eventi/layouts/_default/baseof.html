@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="it-IT">
-    {{- partial "head.html" . -}}
+    {{- partialCached "head.html" . -}}
     <body id="top">
-        {{- partial "header.html" . -}}
+        {{- partialCached "header.html" . -}}
         
         {{- block "main" . }}{{- end }}
         
-        {{- partial "footer.html" . -}}
-        {{- partial "script.html" . -}}
+        {{- partialCached "footer.html" . -}}
+        {{- partialCached "script.html" . -}}
     </body>
 </html>
