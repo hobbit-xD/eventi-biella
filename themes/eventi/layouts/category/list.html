@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="s-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display-1 display-1--with-line-sep s-content__header">{{ .Name | humanize }}</h1>
+            </div>
+        </div>
+        {{ if eq .Kind "taxonomyTerm" }}
+        {{ range $.Site.Taxonomies.category.ByCount }}
+
+        <div class="row mt-2 justify-content-center">
+            <div class="col-6 mt-auto text-right">
+                {{ .Count }} Articoli
+            </div>
+            <div class="col-6">
+                <a class="text-body" href="/category{{ .Name | relURL }}"><u>{{ .Name | humanize }}</u></a>
+            </div>
+        </div>
+        {{ end }}
+        {{ else }}
+        {{ $dateFormat := default "Jan 2" (index .Site.Params "date_format") }}
+        {{ $.Scratch.Set "lastYear" ""}}
+        {{ range .Pages }}
+        {{ $year := .Date.Year }}
+        {{ $lastYear := $.Scratch.Get "lastYear"}}
+        {{ $data := (split .Params.data "-")}}
+        <div class="row mt-2 justify-content-center">
+            <div class="col-6 mt-auto text-right">
+                <time class="post-date" datetime="{{ index $data 2 }} {{ index $.Site.Data.mesi (printf "%d" (int (index $data 1)))  }}
+                    {{ index $data 0 }}">{{ index $data 2 }}
+                    {{ index $.Site.Data.mesi (printf "%d" (int (index $data 1)))  }}
+                    {{ index $data 0 }}</time>
+            </div>
+            <div class="col-6">
+                {{ if ne $year $lastYear }}
+                <p class="text-muted">{{ $year }}</p>
+                {{ $.Scratch.Set "lastYear" $year }}
+                {{ end }}
+                <a class="text-body" href="{{ .Permalink }}"><u>{{ if .Draft }}DRAFT:
+                        {{end}}{{ .Title | markdownify }}</u></a>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+{{ end }}
