@@ -45,3 +45,6 @@ canonifyURLs = true
   filename = "sitemap.xml"
   priority = 0.5
 
+[taxonomies]
+  category = "category"
+  tag = "tags"
