@@ -1,4 +1,4 @@
-baseURL = "https://eventi-biella.it/"
+baseURL = "http://eventi-biella.it/"
 languageCode = "it-IT"
 defaultContentLanguage = "it"
 title = "Eventi Biella"
