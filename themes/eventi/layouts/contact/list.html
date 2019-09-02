@@ -5,18 +5,19 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <h1 class="display-1 display-1--with-line-sep s-content__header">{{.Title }}</h2>
+                <h1 class="display-1 display-1--with-line-sep s-content__header">{{.Title }}</h1>
 
-                    <img src="{{ index .Params.images 0 | absURL }}" alt="{{.Site.Params.author}}" class="img-fluid w-100 mb-5">
+                    <img src="{{ index .Params.images 0 | absURL }}" alt="{{.Site.Params.author}}"
+                        class="img-fluid w-100 mb-5">
 
                     <div class="row justify-content-center">
                         <div class="col-10">
-                          {{ .Content }}
+                            {{ .Content }}
                         </div>
                     </div>
 
-<hr/>
-<h1>Compila i campi</h1>
+                    <hr />
+                    <h1>Compila i campi</h1>
 
                     <form name="cForm" id="cForm" class="contact-form" method="post" data-netlify="true" role="form">
                         <fieldset>
@@ -27,8 +28,8 @@
                             </div>
 
                             <div class="form-field">
-                                <input name="cEmail" id="cEmail" class="full-width" placeholder="Il tuo indirizzo email*" value=""
-                                    type="text" required>
+                                <input name="cEmail" id="cEmail" class="full-width"
+                                    placeholder="Il tuo indirizzo email*" value="" type="text" required>
                             </div>
 
                             <div class="message form-field">
@@ -39,7 +40,7 @@
 
                             <div class="upload-btn-wrapper">
                                 <!--<div class="btn">Carica un allegato</div>-->
-                                <input type="file" name="cFile" id="cFile" class="full-width" value="" multiple/>
+                                <input type="file" name="cFile" id="cFile" class="full-width" value="" multiple />
                                 <label for="cFile" class="btn">Carica un allegato</label>
                                 <div id="file-upload-filename"></div>
                             </div>
