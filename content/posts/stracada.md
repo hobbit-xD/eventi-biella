@@ -2,10 +2,10 @@
 title: "La Stracada"
 date: 2019-09-01T19:14:08+02:00
 data: 2019-9-14
-tags: [corsa,beneficenza,piedi,running]
+tags: ["corsa","beneficenza","piedi","running"]
 description: "Si tratta di una marcia a passo libero non competitiva di 10 km, il cui ricavato sarà devoluto a scopo benefico all'AIMA associazione italiana malattia Alzheimer, sede di Biella."
 draft: false
-category: "SPORT"
+category: "sport"
 author: ""
 
 images: ["/img/thumb/stracada.jpg"]

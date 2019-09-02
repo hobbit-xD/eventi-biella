@@ -2,7 +2,7 @@
 title: "Bolle di Malto"
 date: 2019-08-20T14:47:00+02:00
 data: 2019-8-28
-tags: [evento,birra,concerti]
+tags: ["evento","birra","concerti"]
 description: "Bolle di Malto è l'appuntamento dedicato alle birre artigianali e allo street food di qualità. Protagonisti sono i microbirrifici biellesi e piemontesi, chiamati a soddisfare il palato del pubblico con proposte genuine a base di ingredienti selezionati. A questi microbirrifici si aggiungono ospiti speciali da fuori regione, ognuno con le proprie creazioni uniche e inimitabili."
 draft: false
 category: "eventi"

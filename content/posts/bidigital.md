@@ -6,7 +6,7 @@ tags: [digital marketing, PMI, startup,workshop]
 description: Un evento gratuito dedicato al mondo del digitale e dell'innovazione con conferenze non-stop, occasioni di networking e confronto tra partecipanti e relatori, workshop riservati alle PMI e libero accesso all’area dedicata alle Startup.
 
 draft: false
-category: "Networking"
+category: "networking"
 author: ""
 
 images: ["/img/thumb/bidigital-400.jpg"]
