@@ -50,7 +50,7 @@ canonifyURLs = true
   tag = "tags"
 
 [outputs]
-  home = [ "HTML", "RSS", "REDIR", "HEADERS" ]
+  home = [ "HTML", "RSS", "REDIR", "HEADERS","JSON" ]
   section = [ "HTML", "RSS"]
 
 [mediaTypes]
