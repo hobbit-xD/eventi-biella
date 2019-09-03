@@ -22,7 +22,7 @@
           "@context": "http://schema.org", 
           "@type": "BlogPosting",
           "headline": "{{ .Title }}",
-          "genre": "{{ range .Params.category }}{{ . }}{{ end }}",
+          "genre": "{{ .Params.category }}",
           "url": "{{ .Permalink }}",
           "datePublished": "{{ time .Date }}",
           "description": "{{ .Description }}",
