@@ -8,6 +8,7 @@
 
 Link: </css/main.min.css>; rel=preload; as=style; nopush
 Link: </vendor/bootstrap/css/bootstrap.min.css>; rel=preload; as=style; nopush
+Link: </css/toggle.min.css>; rel=preload; as=style; nopush
 Link: </js/main.min.js>; rel=preload; as=script; nopush
 Link: </vendor/bootstrap/js/bootstrap.bundle.min.js>; rel=preload; as=script; nopush
 Link: </vendor/jquery/jquery.min.js>; rel=preload; as=script; nopush
