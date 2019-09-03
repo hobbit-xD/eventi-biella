@@ -10,7 +10,7 @@ draft: false
 category: "sport"
 author: "admin"
 
-images: ["/img/thumb/mucfuntrail-400.jpg"]
+images: ["/img/thumb/mucfuntrail-400.jpeg"]
 
 post_images: "/img/post/muchead.jpg"
 
@@ -82,7 +82,7 @@ al termine della gara pranzo e festa in quota!
 
 Oppure compila il modulo, che troverai anche al desk di consegna pettorale, il giorno stesso della gara.
 
-![Locandina](/img/post/mucfuntrail.jpg)
+![Locandina](/img/post/mucfuntrail.jpeg)
 
 # NOTA BENE:
 Per qualsiasi informazione e aggiornamenti contattare gli organizzatori o visitare il sito web o le pagine social di riferiemnto.

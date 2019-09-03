@@ -8,7 +8,7 @@ draft: false
 category: "sport"
 author: ""
 
-images: ["/img/thumb/stracada.jpg"]
+images: ["/img/thumb/stracada.jpeg"]
 
 post_images: "/img/post/stracada.jpg"
 
@@ -66,4 +66,4 @@ Corso 53° Fanteria, Viale Macallè, Via Fratelli Rosselli, Via Ivrea, Via Mente
 <iframe src="https://www.google.com/maps/d/embed?mid=1Zew0iWxQMMzgMmEIojOqGjewMXE" style="width:100%;height:480px;"></iframe>
 
 # Volantino
-![Volantino](/img/post/stracada-volantino.jpg)
+![Volantino](/img/post/stracada-volantino.jpeg)

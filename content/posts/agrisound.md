@@ -8,9 +8,9 @@ draft: false
 category: "eventi"
 author: "admin"
 
-images: ["/img/thumb/agrisound-400.jpg"]
+images: ["/img/thumb/agrisound-400.jpeg"]
 
-post_images: "/img/post/agrisound.jpg"
+post_images: "/img/post/agrisound.jpeg"
 
 luogo: "Campo Sportivo - Via Spolina - 13836 Cossato (BI)"
 

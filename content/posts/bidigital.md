@@ -9,9 +9,9 @@ draft: false
 category: "networking"
 author: ""
 
-images: ["/img/thumb/bidigital-400.jpg"]
+images: ["/img/thumb/bidigital-400.jpeg"]
 
-post_images: "/img/post/bidigital.jpg"
+post_images: "/img/post/bidigital.jpeg"
 
 luogo: "Sellalab - Via Corradino Sella 10, 13900 Biella"
 
