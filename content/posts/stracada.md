@@ -8,7 +8,7 @@ draft: false
 category: "sport"
 author: ""
 
-images: ["/img/thumb/stracada.jpeg"]
+images: ["/img/thumb/stracada.jpg"]
 
 post_images: "/img/post/stracada.jpg"
 
