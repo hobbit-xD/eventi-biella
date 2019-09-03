@@ -53,11 +53,11 @@
 
             <div class="item-entry__text">
               <div class="item-entry__cat">
-                <a href="/category/{{ .Params.category }}" title="category-link">{{ .Params.category }}</a>
+                <a href="/category/{{ .Params.category }}" title="{{ .Params.category }}">{{ .Params.category }}</a>
               </div>
 
               <h1 class="item-entry__title">
-                <a href="{{ .RelPermalink }}" title="title-link">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
               </h1>
 
               <div class="item-entry__date">
