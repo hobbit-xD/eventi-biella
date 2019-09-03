@@ -29,7 +29,8 @@
     "image": "{{ index .Params.images 0 | absURL }}",
     "publisher": {
       "@type": "Organization",
-      "name": "{{ .Site.Params.author }}"
+      "name": "{{ .Site.Params.author }}",
+      "logo": "{{ index .Params.images 0 | absURL }}"
     },
     "author": {
       "@type": "Person",
