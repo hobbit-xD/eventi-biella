@@ -3,7 +3,7 @@ languageCode = "it-IT"
 defaultContentLanguage = "it"
 title = "Eventi Biella"
 theme = "eventi"
-
+disableAliases = true
 enableRobotsTXT = true
 canonifyURLs = true
 
@@ -48,3 +48,23 @@ canonifyURLs = true
 [taxonomies]
   category = "category"
   tag = "tags"
+
+[outputs]
+  home = [ "HTML", "RSS", "REDIR", "HEADERS" ]
+  section = [ "HTML", "RSS"]
+
+[mediaTypes]
+[mediaTypes."text/netlify"]
+  delimiter = ""
+
+[outputFormats]
+[outputFormats.REDIR]
+  mediatype = "text/netlify"
+  baseName = "_redirects"
+  isPlainText = true
+  notAlternative = true
+[outputFormats.HEADERS]
+  mediatype = "text/netlify"
+  baseName = "_headers"
+  isPlainText = true
+  notAlternative = true

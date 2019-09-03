@@ -1,0 +1,64 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+*/
+
+
+Link: </css/main.css>; rel=preload; as=style; nopush
+Link: </js/main.js>; rel=preload; as=script; nopush
+
+/vendor/jquery/jquery.min.js
+Cache-Control: public, max-age=31556926, immutable
+
+/vendor/jquery/jquery-slim.min.js
+Cache-Control: public, max-age=31556926, immutable
+
+/vendor/bootstrap/css/bootstrap.min.css
+Cache-Control: public, max-age=31556926, immutable
+
+/vendor/bootstrap/js/bootstrap.bundle.min.js
+Cache-Control: public, max-age=31556926, immutable
+
+/font-awesome/css/fontawesome-all.css
+Cache-Control: public, max-age=31556926, immutable
+
+/css/base.css
+Cache-Control: public, max-age=31556926
+
+/css/main.css
+Cache-Control: public, max-age=31556926
+
+/css/normalize.css
+Cache-Control: public, max-age=31556926, immutable
+
+/css/toggle.css
+Cache-Control: public, max-age=31556926, immutable
+
+/js/filePrint.js
+Cache-Control: public, max-age=31556926, immutable
+
+/js/main.js
+Cache-Control: public, max-age=31556926
+
+/js/modernizr.js
+Cache-Control: public, max-age=31556926, immutable
+
+/js/plugins.js
+Cache-Control: public, max-age=31556926, immutable
+
+/js/toggle.js
+Cache-Control: public, max-age=31556926, immutable
+
+/img/*.jpeg
+Cache-Control: public, max-age=31556926, immutable
+
+/img/*.png
+Cache-Control: public, max-age=31556926, immutable
+
+/img/*.svg
+Cache-Control: public, max-age=31556926, immutable
+
+/img/*.gif
+Cache-Control: public, max-age=31556926, immutable
