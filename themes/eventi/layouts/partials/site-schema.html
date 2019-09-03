@@ -11,7 +11,7 @@
         "name": "{{ .Site.Params.author }}"
       },
     "description": "{{ .Site.Params.description }}",
-    "image": "{{ .Site.Params.logo | relURL }}"
+    "image": "{{ .Site.Params.logo | absURL }}"
 }
 </script>
 {{ end }}
@@ -43,7 +43,7 @@
         "@type": "WebSite", 
         "url": "{{ .Permalink }}", 
         "name": "{{ .Title }}",
-        "image": "{{ .Site.Params.logo | relURL }}",
+        "image": "{{ .Site.Params.logo | absURL }}",
          "author": {
             "@type": "Person",
             "name": "{{ .Site.Params.author }}"
