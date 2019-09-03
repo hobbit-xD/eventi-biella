@@ -6,8 +6,11 @@
 */
 
 
-Link: </css/main.css>; rel=preload; as=style; nopush
-Link: </js/main.js>; rel=preload; as=script; nopush
+Link: </css/main.min.css>; rel=preload; as=style; nopush
+Link: </vendor/bootstrap/css/bootstrap.min.css>; rel=preload; as=style; nopush
+Link: </js/main.min.js>; rel=preload; as=script; nopush
+Link: </vendor/bootstrap/js/bootstrap.bundle.min.js>; rel=preload; as=script; nopush
+Link: </vendor/jquery/jquery.min.js>; rel=preload; as=script; nopush
 
 /vendor/jquery/jquery.min.js
 Cache-Control: public, max-age=31556926, immutable
@@ -24,31 +27,31 @@ Cache-Control: public, max-age=31556926, immutable
 /font-awesome/css/fontawesome-all.css
 Cache-Control: public, max-age=31556926, immutable
 
-/css/base.css
+/css/base.min.css
 Cache-Control: public, max-age=31556926
 
-/css/main.css
+/css/main.min.css
 Cache-Control: public, max-age=31556926
 
-/css/normalize.css
+/css/normalize.min.css
 Cache-Control: public, max-age=31556926, immutable
 
-/css/toggle.css
+/css/toggle.min.css
 Cache-Control: public, max-age=31556926, immutable
 
-/js/filePrint.js
+/js/filePrint.min.js
 Cache-Control: public, max-age=31556926, immutable
 
-/js/main.js
+/js/main.min.js
 Cache-Control: public, max-age=31556926
 
-/js/modernizr.js
+/js/modernizr.min.js
 Cache-Control: public, max-age=31556926, immutable
 
-/js/plugins.js
+/js/plugins.min.js
 Cache-Control: public, max-age=31556926, immutable
 
-/js/toggle.js
+/js/toggle.min.js
 Cache-Control: public, max-age=31556926, immutable
 
 /img/*.jpeg
