@@ -7,49 +7,52 @@
   "url": "{{ .Permalink }}", 
   "name": "{{ .Site.Title }}",
   "author": {
-        "@type": "Person",
-        "name": "{{ .Site.Params.author }}"
-      },
-    "description": "{{ .Site.Params.description }}",
-    "image": "{{ .Site.Params.logo | absURL }}"
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "description": "{{ .Site.Params.description }}",
+  "image": "{{ .Site.Params.logo | absURL }}"
 }
 </script>
 {{ end }}
 {{ if .IsPage }}
-<script type="application/ld+json">
-      {{ if eq .Section "posts" }}
-      { 
-          "@context": "http://schema.org", 
-          "@type": "BlogPosting",
-          "headline": "{{ .Title }}",
-          "genre": "{{ .Params.category }}",
-          "url": "{{ .Permalink }}",
-          "datePublished": "{{ time .Date }}",
-          "description": "{{ .Description }}",
-          "image": "{{ index .Params.images 0 | absURL }}",
-          "publisher":  {
-            "@type": "Person",
-            "name": "{{ .Site.Params.author }}"
-        },
-          "author": {
-              "@type": "Person",
-              "name": "{{ .Site.Params.author }}"
-          }
-      }
-
-      {{ else }}
-      { 
-        "@context": "http://schema.org", 
-        "@type": "WebSite", 
-        "url": "{{ .Permalink }}", 
-        "name": "{{ .Title }}",
-        "image": "{{ .Site.Params.logo | absURL }}",
-         "author": {
-            "@type": "Person",
-            "name": "{{ .Site.Params.author }}"
-          },
-        "description": "{{ .Description }}"
-      }
-      {{ end }}
-      </script>
+  <script type="application/ld+json">
+  {{ if eq .Section "posts" }}
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "genre": "{{ .Params.category }}",
+    "url": "{{ .Permalink }}",
+    "datePublished": "{{ time .Date }}",
+    "description": "{{ .Description }}",
+    "image": "{{ index .Params.images 0 | absURL }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.author }}"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    }
+  }
+  {{ else }}
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "{{ .Permalink }}",
+    "name": "{{ .Title }}",
+    "image": "{{ .Site.Params.logo | absURL }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}"
+    },
+    "description": "{{ .Description }}"
+  }
+  {{ end }}
+  </script>
 {{ end }}
