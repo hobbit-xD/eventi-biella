@@ -3,23 +3,23 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": {{ .Site.BaseURL }},
+  "url": {{ .Site.BaseURL | jsonify  }},
   {{ if .Site.Params.author -}}
   "author": {
     "@type": "Person",
-    "name": {{ .Site.Params.author }}
+    "name": {{ .Site.Params.author | jsonify }}
   },
   {{- end }}
   {{ if .Site.Params.description -}}
-  "description": {{ .Site.Params.description }},
+  "description": {{ .Site.Params.description  | jsonify  }},
   {{- end }}
   {{ with .Site.Params.image -}}
-  "image": {{ .url | absURL }},
+  "image": {{ .url | absURL | jsonify  }},
   {{- end }}
   {{ with .Site.Params.logo -}}
-  "thumbnailUrl": {{ .url | absURL }},
+  "thumbnailUrl": {{ .url | absURL | jsonify  }},
   {{- end }}
-  "name": {{ .Site.Title }}
+  "name": {{ .Site.Title | jsonify  }}
 }
 </script>
 {{/*
@@ -33,49 +33,49 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": {{ .Title }},
+  "headline": {{ .Title | jsonify  }},
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": {{ .Permalink }}
+    "@id": {{ .Permalink | jsonify  }}
   },
-  "genre": {{ .Type }},
+  "genre": {{ .Type | jsonify  }},
   {{ with .Params.tags -}}
-  "keywords": {{ delimit . ", " }},
+  "keywords": {{ delimit . ", " | jsonify  }},
   {{- end }}
-  "wordcount": {{ .WordCount }},
-  "url": {{ .Permalink }},
+  "wordcount": {{ .WordCount | jsonify  }},
+  "url": {{ .Permalink | jsonify  }},
   {{ if not .PublishDate.IsZero -}}
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML | jsonify  }},
   {{- else if not .Date.IsZero -}}
-  "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML | jsonify  }},
   {{- end }}
   {{ with .Lastmod -}}
-  "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+  "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML | jsonify  }},
   {{- end }}
   {{ with .Site.Params.publisher -}}
   "publisher": {
     "@type": "Organization",
-    "name": {{ .name }},
+    "name": {{ .name | jsonify  }},
     "logo": {
       "@type": "ImageObject",
-      "url": {{ .logo.url | absURL }},
-      "width": {{ .logo.width }},
-      "height": {{ .logo.height }}
+      "url": {{ .logo.url | absURL | jsonify  }},
+      "width": {{ .logo.width | jsonify  }},
+      "height": {{ .logo.height | jsonify  }}
     }
   },
   {{- end }}
   {{ if .Params.author -}}
   "author": {
     "@type": "Person",
-    "name": {{ .Params.author }}
+    "name": {{ .Params.author | jsonify  }}
   },
   {{- else if .Site.Author.name -}}
   "author": {
     "@type": "Person",
-    "name": {{ .Site.Author.name }}
+    "name": {{ .Site.Author.name | jsonify  }}
   },
   {{- end }}
-  "description": {{ .Description }}
+  "description": {{ .Description | jsonify  }}
 }
 </script>
 {{- end }}
