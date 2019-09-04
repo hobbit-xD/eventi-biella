@@ -3,79 +3,23 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
-  {{ if .Site.Params.author -}}
+  "url": {{ .Site.BaseURL | jsonify }},
+  {{ with .Site.Params.author -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
+    "name": {{ . | jsonify }}
   },
   {{- end }}
-  {{ if .Site.Params.description -}}
-  "description": "{{ .Site.Params.description }}",
+  {{ with .Site.Params.description -}}
+  "description": {{ . | jsonify }},
   {{- end }}
-  {{ with .Site.Params.image -}}
-  "image": "{{ .url | absURL }}",
+  {{ with .Site.Params.image.url -}}
+  "image": {{ . | absURL | jsonify }},
   {{- end }}
-  {{ with .Site.Params.logo -}}
-  "thumbnailUrl": "{{ .url | absURL }}",
+  {{ with .Site.Params.logo.url -}}
+  "thumbnailUrl": {{ . | absURL | jsonify }},
   {{- end }}
-  "name": "{{ .Site.Title }}"
-}
-</script>
-{{/*
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "http://example.com/search?&q={query}",
-    "query-input": "required"
-  } */}}
-{{- else if .IsPage -}}
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "headline": "{{ .Title }}",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  },
-  "genre": "{{ .Type }}",
-  {{ with .Params.tags -}}
-  "keywords": "{{ delimit . ", " }}",
-  {{- end }}
-  "wordcount": "{{ .WordCount }}",
-  "url": "{{ .Permalink }}",
-  {{ if not .PublishDate.IsZero -}}
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
-  {{- else if not .Date.IsZero -}}
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
-  {{- end }}
-  {{ with .Lastmod -}}
-  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
-  {{- end }}
-  {{ with .Site.Params.publisher -}}
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ .name }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ .logo.url | absURL }}",
-      "width": "{{ .logo.width }}",
-      "height": "{{ .logo.height }}"
-    }
-  },
-  {{- end }}
-  {{ if .Params.author -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Params.author }}"
-  },
-  {{- else if .Site.Author.name -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
-  },
-  {{- end }}
-  "description": "{{ .Description }}"
+  "name": {{ .Site.Title | jsonify }}
 }
 </script>
 {{- end }}
