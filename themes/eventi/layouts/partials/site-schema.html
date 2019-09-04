@@ -3,23 +3,23 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
+  "url": {{ .Site.BaseURL }},
   {{ if .Site.Params.author -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
+    "name": {{ .Site.Params.author }}
   },
   {{- end }}
   {{ if .Site.Params.description -}}
-  "description": "{{ .Site.Params.description }}",
+  "description": {{ .Site.Params.description }},
   {{- end }}
   {{ with .Site.Params.image -}}
-  "image": "{{ .url | absURL }}",
+  "image": {{ .url | absURL }},
   {{- end }}
   {{ with .Site.Params.logo -}}
-  "thumbnailUrl": "{{ .url | absURL }}",
+  "thumbnailUrl": {{ .url | absURL }},
   {{- end }}
-  "name": "{{ .Site.Title }}"
+  "name": {{ .Site.Title }}
 }
 </script>
 {{/*
@@ -33,32 +33,32 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ .Title }}",
+  "headline": {{ .Title }},
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
+    "@id": {{ .Permalink }}
   },
-  "genre": "{{ .Type }}",
+  "genre": {{ .Type }},
   {{ with .Params.tags -}}
-  "keywords": "{{ delimit . ", " }}",
+  "keywords": {{ delimit . ", " }},
   {{- end }}
   "wordcount": {{ .WordCount }},
-  "url": "{{ .Permalink }}",
+  "url": {{ .Permalink }},
   {{ if not .PublishDate.IsZero -}}
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- else if not .Date.IsZero -}}
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- end }}
   {{ with .Lastmod -}}
-  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- end }}
   {{ with .Site.Params.publisher -}}
   "publisher": {
     "@type": "Organization",
-    "name": "{{ .name }}",
+    "name": {{ .name }},
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .logo.url | absURL }}",
+      "url": {{ .logo.url | absURL }},
       "width": {{ .logo.width }},
       "height": {{ .logo.height }}
     }
@@ -67,15 +67,15 @@
   {{ if .Params.author -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Params.author }}"
+    "name": {{ .Params.author }}
   },
   {{- else if .Site.Author.name -}}
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
+    "name": {{ .Site.Author.name }}
   },
   {{- end }}
-  "description": "{{ .Description }}"
+  "description": {{ .Description }}
 }
 </script>
 {{- end }}
