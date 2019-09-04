@@ -1,13 +1,25 @@
+<script type='application/ld+json'>
+  {
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "name": "Eventi Biella",
+    "url": "https://eventi-biella.it/"
+  }
+</script>
+
+
+
 <!-- JSON-LD -->
 <!--{{ if .IsHome }}-->
+<!--
 <script type="application/ld+json">
 {   
-  "@context": "http://schema.org", 
+  "@context": "https://schema.org/", 
   "@type": "WebSite", 
   "url": "{{ .Permalink }}", 
   "name": "{{ .Site.Title }}",
-  "author": {
-    "@type": "Person",
+  "publisher": {
+    "@type": "ProfilePage",
     "name": "{{ .Site.Params.author }}"
   },
   "description": "{{ .Site.Params.description }}",
@@ -17,6 +29,7 @@
   ]
 }
 </script>
+-->
 <!--{{ end }}
 {{ if .IsPage }}
   <script type="application/ld+json">
