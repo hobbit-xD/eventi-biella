@@ -1,0 +1,14 @@
+{
+    "name": "Eventi Biella",
+    "short_name": "Eventi Biella",
+    "icons": [
+        {
+            "src": "/biglogo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#111860",
+    "display": "standalone"
+}
