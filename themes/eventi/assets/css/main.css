@@ -2442,6 +2442,7 @@ footer {
   font-size: 1.5rem;
   line-height: 2;
   color: rgba(255, 255, 255, 0.5);
+  text-align: justify;
 }
 
 footer a {
@@ -2483,7 +2484,13 @@ footer [class*="s-footer__"] > .row [class*="col-"]:last-child {
 .s-footer__main {
   margin-bottom: 3rem;
 }
-
+@media only screen and (max-width: 400px) {
+  footer {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 0px;
+  }
+}
 
 /* ------------------------------------------------------------------- 
  * ## footer social
