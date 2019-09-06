@@ -38,7 +38,7 @@ A **partire dalle ore 10** si presenteranno le aziende presenti e la Presidente 
 * **Ore 12.30 - 14.00:** pranzo presso la “Volta del Gusto” (buffet con piatto caldo a 12 euro). Per prenotazioni 3465787733.
 * **Ore 14.00 - 15.30:** proiezione di immagini e narrazione di Chiara Lorenzetti. "Quando meno te lo aspetti la vita ti sorprende: Giappone, da sogno a realtà. Diario di viaggio stra-ordinario di Chiara, artigiana restauratrice".
 * **Ore 15.30 - 16.30:** spettacolo di “Bolle Giganti” a cura di Dreams Eventi di Jennifer Bruson.
-* **Ore 16.30: merenda offerta da “Le Delizie di Lena” di Lena Corlade.
+* **Ore 16.30:** merenda offerta da “Le Delizie di Lena” di Lena Corlade.
 * **Ore 17.00 - 17.50:** lezione di Zumba a cura di Angela Calvio (Zumba Instructor Network Zin).
 * **Ore 18.00 - 19.00:** aperitivo con degustazione di prodotti locali offerto da “L’orto di Beatrice” di Beatrice Pelle.
 
