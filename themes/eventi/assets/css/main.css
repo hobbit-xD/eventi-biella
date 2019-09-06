@@ -1515,7 +1515,7 @@ input::-moz-focus-inner {
 }
 
 .entries .item-entry__thumb-link::after {
-  content: ".";
+  content: "...";
   font-family: georgia, serif;
   font-size: 3rem;
   z-index: 1;
