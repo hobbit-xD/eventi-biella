@@ -11,9 +11,6 @@
     {{ with .Params.tags -}}
     "keywords": "{{ . }}",
     {{ end -}}
-    "sameAs" : [
-      "https://www.facebook.com/eventiBI"
-    ],
     {{ else -}}
     "@type": "WebPage",
     "url" : "{{ .Permalink }}",
