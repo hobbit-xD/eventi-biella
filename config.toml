@@ -6,6 +6,7 @@ theme = "eventi"
 disableAliases = true
 enableRobotsTXT = true
 canonifyURLs = true
+paginate = 6
 
 [permalinks]
   posts = "/:filename/"

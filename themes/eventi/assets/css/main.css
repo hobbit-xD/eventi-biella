@@ -1244,7 +1244,7 @@ input::-moz-focus-inner {
  * ## pagination 
  * ------------------------------------------------------------------- */
 .pgn {
-  margin: 3rem auto;
+  margin: 3rem auto 1rem auto;
   text-align: center;
 }
 
@@ -2132,7 +2132,7 @@ input::-moz-focus-inner {
 .s-content {
   background-color: #fcfcfc;
   padding-top: 6rem;
-  padding-bottom: 7.2rem;
+  padding-bottom: 5px;
 }
 
 .s-content--no-padding-bottom {
