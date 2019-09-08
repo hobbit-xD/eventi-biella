@@ -4,7 +4,7 @@ date: 2019-08-25T13:44:46+02:00
 data: 2019-9-07
 tags: [trail,corsa,camminata,nordic walking,oropa,santuario]
 description: "Dopo il successo della Prima Edizione, il 7 settembre torna con la sua Seconda Edizione!. Oropa Trail nasce con l’intento di mettere in risalto a tutti gli appassionati di corsa in montagna la Conca di Oropa ed il Santuario, riconosciuto come Patrimonio UNESCO."
-draft: false
+draft: true
 category: "sport"
 author: ""
 
