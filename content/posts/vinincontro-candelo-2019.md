@@ -54,7 +54,6 @@ Ad affiancare la cultura del vino, quella del cibo con formaggi, riso, dolci e m
 Biglietto d’ingresso alla manifestazione euro 4,00.<br>
 La serata di <u>giovedì 12</u> **non** ha biglietto di ingresso.<br>
 RispettiAMO l’ambiente: Il bicchiere degustazione ha un costo di 3 € (come cauzione). **L’importo verrà interamente restituito a chi restituirà il bicchiere presso la postazione adibita.**
-
 &nbsp;
 #### Parcheggi gratis attorno al Ricetto, area camper gratis.
 
