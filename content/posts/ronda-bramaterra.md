@@ -6,7 +6,7 @@ tags: ["ronda","vino","camminata","bramaterra","masserano","brusnengo","biella",
 description: "Passeggiata tra le colline di Masserano in 6 tappe, con degustazione di piatti dal sapore biellese, accompagnati
 dai vini locali D.O.C. in ogni postazione, buona musica dal vivo."
 draft: false
-category: "eventi"
+category: "evento"
 author: ""
 
 images: ["/img/thumb/ronda-bramaterra-400.jpeg"]
