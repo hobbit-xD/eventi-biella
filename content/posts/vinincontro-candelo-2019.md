@@ -59,3 +59,6 @@ RispettiAMO l’ambiente: Il bicchiere degustazione ha un costo di 3 € (come c
 
 # Locandina
 ![Locandina](/img/post/vin2019-locandina.png)
+
+# Nota bene
+Per qualsiasi informazione, maggiori dettagli e aggiornamenti consultate il sito web o le pagine social dell' evento che potete trovare nella descrizione.
