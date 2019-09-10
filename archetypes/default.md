@@ -29,3 +29,12 @@ email: ""
 mese: ""
 ---
 
+
+
+
+
+
+
+# Nota bene
+
+Per qualsiasi informazione, maggiori dettagli e aggiornamenti consultate il sito web o le pagine social dell’ evento che potete trovare nella descrizione.
