@@ -62,7 +62,7 @@ Negli orari di apertura sarà possibile, **su prenotazione**, visitare alcune sa
 
 Si segnala che nella via G.Rivetti in prossimità di Villa Era vige il divieto di sosta, per cui si invita ad utilizzare il parcheggio gratuito dell’area verde di via Rivetti-via Getta. Pertanto funzionerà il **servizio navetta gratuito** Beatours per raggiungere comodamente la villa e ritornare al parcheggio.
 
-#### [Scarica il volantino](http://prolocovigliano.it/img/Programma%20OG-VillaEra19.pdf)
+#### <u>[Scarica il volantino](http://prolocovigliano.it/img/Programma%20OG-VillaEra19.pdf)</u>
 
 # Nota bene
 
