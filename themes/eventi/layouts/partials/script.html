@@ -28,3 +28,24 @@
   galite('create', '{{ .Site.Params.googleAnalytics }}', 'auto');
   galite('send', 'pageview');
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAQe2U2EbkG9JOFYkHBfq6rbR7gAW2eSgQ",
+    authDomain: "first-project-101d3.firebaseapp.com",
+    databaseURL: "https://first-project-101d3.firebaseio.com",
+    projectId: "first-project-101d3",
+    storageBucket: "",
+    messagingSenderId: "398555789632",
+    appId: "1:398555789632:web:2ec4cdc5ca54ba29f1a2a5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
