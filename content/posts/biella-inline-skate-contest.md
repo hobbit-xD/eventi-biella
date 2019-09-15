@@ -4,7 +4,7 @@ date: 2019-09-08T14:22:50+02:00
 data: 2019-9-14
 tags: ["skate","skateboard","contest","skatepark","biella","gara","extreme sport"]
 description: "Dopo il successo delle edizioni passate, ecco la terza edizione del Biella Inline Skating Contest! Il 14 e il 15 e il 21 e il 22 settembre, piazza Giovanni Falcone di Biella diventerà il palcoscenico dell'unica manifestazione italiana di inline skating e skateboarding."
-draft: false
+draft: true
 category: "sport"
 author: ""
 

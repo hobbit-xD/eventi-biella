@@ -4,7 +4,7 @@ date: 2019-09-13T18:43:29+02:00
 data: 2019-9-15
 tags: ["Ebike","mtb","oasi zegna","bielmonte","eventi","biella"]
 description: "Per trascorrere una giornata nella natura e provare, magari per la prima volta, una e-bike, non c'è nulla di meglio che avventurarsi con guide professionistiche lungo percorsi mountain bike selezionati, pensati sia per chi desidera prendere dimestichezza con la bici elettrica sia per i più esperti."
-draft: false
+draft: true
 category: "sport"
 author: ""
 
