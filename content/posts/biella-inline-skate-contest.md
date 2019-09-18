@@ -21,7 +21,7 @@ data_fine: "22 Settembre 2019"
 ora_fine: "18:00"
 
 sito_web: "http://www.comune.biella.it/web/eventi/extreme-sport-festival"
-facebook: ""
+facebook: "https://www.facebook.com/Biellaskateparkevents/"
 instagram: ""
 telefono: ""
 email: ""
