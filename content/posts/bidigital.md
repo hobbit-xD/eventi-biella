@@ -41,6 +41,9 @@ L'evento è rivolto principalmente alle PMI ma anche startup, freelance e a tutt
 ## *PARLEREMO DI*
 Digital Transformation - Open Innovation - Growth Hacking - Personal Branding - HR Management - Crowdfunding - SEO - Online Payment - Visual Storytelling - Content Marketing - Social Advertising - Journalism - Digital Mismatch - E-Commerce - Artificial Intelligence - Business Model - Digital Entertainment e non solo…
 
+# Programma
+<a href="/img/post/Programma_2019.pdf" target=_blank>![Programma](/img/post/Programma_bidigital.jpeg)</a>
+
 **Iscriviti ora:** http://bit.ly/BiDigital2019
 
 ### <u>NOTA BENE</u>
