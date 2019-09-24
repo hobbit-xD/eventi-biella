@@ -3,7 +3,7 @@ title: "Gli Orti de La Malpenga"
 date: 2019-09-22T21:04:10+02:00
 data: 2019-9-28
 tags: ["orti malpenga","fai","eventi","biella"]
-description: "La manifestazione **“Gli Orti de La Malpenga”** nasce dal desiderio di far rivivere, insieme ai migliori professionisti del settore e sotto la regia dell’Accademia Piemontese Del Giardino – presieduta dall’Architetto Paolo Pejrone – la tradizione che Vittorio Buratti,aveva instaurato a Villa La Malpenga circa ottant’anni fa: la coltivazione dei prodotti dell’orto e del frutteto, delle insalate e delle mele in particolare."
+description: "La manifestazione “Gli Orti de La Malpenga” nasce dal desiderio di far rivivere, insieme ai migliori professionisti del settore e sotto la regia dell’Accademia Piemontese Del Giardino – presieduta dall’Architetto Paolo Pejrone – la tradizione che Vittorio Buratti,aveva instaurato a Villa La Malpenga circa ottant’anni fa: la coltivazione dei prodotti dell’orto e del frutteto, delle insalate e delle mele in particolare."
 draft: false
 category: "evento"
 author: ""
