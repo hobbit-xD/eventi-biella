@@ -3,9 +3,9 @@ title: "MappiAMO la Città di Verde | Baraggia di Candelo"
 date: 2019-10-10T08:19:38+02:00
 data: 2019-10-12
 tags: ["Plogging","baraggia","candelo","rifiuti","eventi","biella"]
-description: 
+description: "Sabato 12 Ottobre Natural BOOM, Biella Colors' School, Nabumbo e Conad Candelo Via Iside Viana, con il Patrocinio del Parco Ticino Lago Maggiore, organizzeranno un evento di sensibilizzazione e azione ambientale: il Plogging della Baraggia, un trekking per ripulire la Savana Biellese."
 draft: false
-category: "Sabato 12 Ottobre Natural BOOM, Biella Colors' School, Nabumbo e Conad Candelo Via Iside Viana, con il Patrocinio del Parco Ticino Lago Maggiore, organizzeranno un evento di sensibilizzazione e azione ambientale: il Plogging della Baraggia, un trekking per ripulire la Savana Biellese."
+category: sport
 author: ""
 
 images: ["/img/thumb/baraggia-400.jpeg"]
