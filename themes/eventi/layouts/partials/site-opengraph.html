@@ -17,4 +17,6 @@
 {{ end }}
 <meta name="article:author" content="{{ .Site.Params.author }}">
 <meta name="author" content="{{ .Site.Params.author }}">
-<meta property="og:image" content="{{ if .IsHome }}{{ .Site.Params.logo | absURL }}{{ else if .IsPage }}{{ index .Params.images 0 | absURL }}{{ end }}">
+{{ $HomeImage := (index .Site.Params.logo "url") }}
+
+<meta property="og:image" content="{{ if .IsHome }}{{ $HomeImage | absURL }}{{ else if .IsPage }}{{ index .Params.images 0 | absURL }}{{ end }}">
