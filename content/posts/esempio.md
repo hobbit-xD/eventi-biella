@@ -62,6 +62,6 @@ Per qualsiasi informazione riguardo l'evento: come programma dettagliato della g
 fate riferimento al loro sito web e pagina facebook.
 
 ## Locandina
-![Locandina evento](/img/post/oropa-trail.jpg)
+![Locandina evento]()
 
 ### **Sito Web: [Oropa Trail](https://www.oropatrail.it/)**
